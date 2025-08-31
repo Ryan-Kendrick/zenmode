@@ -75,7 +75,7 @@
       priority: ["🐠", "🌊", "🐚", "🐠", "🐡", "🥥"],
       organization: ["🪼", "🏰", "⚓", "🦐", "🧜", "🍹"],
       style: {
-        background: "RGBA(0, 0, 0, 0)",
+        background: "rgba(0, 0, 0, 0)",
         background:
           "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 15%, rgba(28, 163, 236, 1) 15%, rgba(35, 137, 218, 1) 80%, rgba(15, 94, 156, 1) 100%)",
         outline: "2px solid grey",
