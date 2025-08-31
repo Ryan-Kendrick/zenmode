@@ -198,8 +198,12 @@
           ticket.style.position = "relative"
           statusText.style.background = "none"
           const oceanFloor = ["🪨", "🪸", "🐌", "🪸", "🪨", "🪱"]
+
+          shuffle = (array) => array.sort(() => Math.random() - 0.5)
+          shuffle(oceanFloor)
+
           for (let i = 0; i < oceanFloor.length; i++) {
-            const basePos = Math.min((100 / oceanFloor.length) * i, 95)
+            const basePos = (77 / oceanFloor.length) * i
 
             const left = basePos + Math.random() * 5
 
