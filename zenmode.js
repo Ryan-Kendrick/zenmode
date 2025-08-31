@@ -116,9 +116,6 @@
       }
     }
 
-    console.log(
-      `Element indexes: status=${ticketStatusElIdx}, subject=${subjectElIdx}, requestor=${requestorElIdx}, priority=${priorityElIdx}, organization=${organizationElIdx}`
-    )
     for (const ticket of tickets) {
       if (ticket.children.length < 9) continue
 
@@ -199,7 +196,9 @@
           statusText.style.background = "none"
           const oceanFloor = ["🪨", "🪸", "🐌", "🪸", "🪨", "🪱"]
 
-          shuffle = (array) => array.sort(() => Math.random() - 0.5)
+          function shuffle(array) {
+            array.sort(() => Math.random() - 0.5)
+          }
           shuffle(oceanFloor)
 
           for (let i = 0; i < oceanFloor.length; i++) {
